@@ -15,7 +15,7 @@ export default function Page() {
     <button onClick={() => router.push('/')}>
       Go Back To Home Page </button>
 
-      <button onClick={()=> router.push('/name/address')}>
+      <button onClick={()=> router.push('/address')}>
       Get Address </button>
     </div>);
 
