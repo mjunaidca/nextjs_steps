@@ -1,18 +1,19 @@
 
-export async function generateStaticParams() {
-  const myEvents: string[]=['futurefest', 'meetups', 'fun'];
+// export async function generateStaticParams() {
+//   const myEvents: string[]=['futurefest', 'meetups', 'fun'];
 
-  return myEvents.map((Events) => ({
-    Events: Events,
-  }));
-}
+//   return myEvents.map((Events) => ({
+//     Events: Events,
+//   }));
+// }
 
 
 
-export default function GiveName({ params, searchParams }: {
+export default function GiveName({ params }: {
   params: { Events: string },
-  searchParams: { id: string },
 }) {
+  console.log(params.Events);
+  
   
     return (
       <div>

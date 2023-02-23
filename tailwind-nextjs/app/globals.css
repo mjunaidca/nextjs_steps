@@ -1,29 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .quote {
+    @apply m-3 p-6 bg-blue-100 rounded-lg;
   }
-  body {
-    color: white;
-    background: black;
+  .quote p {
+    @apply font-serif italic text-lg text-gray-700 leading-snug mb-1;
+  }
+  .quote span {
+    @apply text-sm text-gray-500;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply font-sans bg-purple-200 p-12 text-center;
+  }
+  .menu {
+    @apply bg-white p-2 rounded-full;
+  }
+  a {
+    @apply bg-blue-50 text-gray-800 py-2 px-6 rounded-full;
+  }
+  a.active {
+    @apply bg-blue-500 text-white;
   }
 }
