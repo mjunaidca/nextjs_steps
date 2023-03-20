@@ -14,14 +14,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Link href='./'>Home</Link>
-        <Link href='./public'>Public</Link>
-        <Link href='./order'>Order</Link>
-        <Link href='./user'>User</Link>
-        <Link href='./cart'>Cart</Link>
-        <Link href='./shop'>Shop</Link>
-        <Link href='./colocate'>Colocate</Link>
-        <Link href='./error'>Error</Link>
+        <div className='flex gap-4 font-bold'>
+          <Link href='./'>Home</Link>
+          <Link href='./public'>Public</Link>
+          <Link href='./order'>Order</Link>
+          <Link href='./user'>User</Link>
+          <Link href='./cart'>Cart</Link>
+          <Link href='./shop'>Shop</Link>
+          <Link href='./colocate'>ColocateErr</Link>
+          <Link href='./error'>Error</Link></div>
         {children}</body>
     </html>
   )
