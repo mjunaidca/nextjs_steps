@@ -15,6 +15,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className='flex gap-4 font-bold'>
+          <Link href='./server-static'>server-static</Link>
+          <Link href='./server-dynamic'>server-dynamic</Link>
+          <Link href='./data-client'>data-client</Link>
           <Link href='./'>Home</Link>
           <Link href='./public'>Public</Link>
           <Link href='./order'>Order</Link>
