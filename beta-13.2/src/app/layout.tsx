@@ -22,7 +22,8 @@ export default function RootLayout({
           <Link href='./cart'>Cart</Link>
           <Link href='./shop'>Shop</Link>
           <Link href='./colocate'>ColocateErr</Link>
-          <Link href='./error'>Error</Link></div>
+          <Link href='./error'>Error</Link>
+          <Link href='./fetch'>Fetch</Link></div>
         {children}</body>
     </html>
   )
