@@ -5,7 +5,7 @@ const nextConfig = {
   },
   env: {
     CONTENTFUL_SPACE_ID: "wzah69rk6gx3",
-    CONTENTFUL_ACCESS_KEY: "8jyBhzb0kXuubtl_2LB7opHkAIFcGSADhbOInP7JoAs",
+    CONTENTFUL_DELIVERY_KEY: "8jyBhzb0kXuubtl_2LB7opHkAIFcGSADhbOInP7JoAs",
   },
 };
 
