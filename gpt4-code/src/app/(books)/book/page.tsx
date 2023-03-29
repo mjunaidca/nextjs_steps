@@ -1,6 +1,6 @@
 // index.tsx
 import React from "react";
-import BookCard from "../../component/bookCard";
+import BookCard from "../../component/(TestBooks)/bookCard";
 
 // Define some sample data for testing
 const books = [

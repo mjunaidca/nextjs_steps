@@ -1,6 +1,6 @@
 // all-books.tsx
 import React from "react";
-import AllBooks from "../../component/books";
+import AllBooks from "../../component/(TestBooks)/books";
 
 // Define the data for the books as an array of objects
 const books = [

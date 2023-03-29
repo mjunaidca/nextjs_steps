@@ -25,13 +25,7 @@ const BFinalCard = ({ book }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center w-64 h-96 p-4 bg-white rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
       <div className="relative w-full h-1/2">
-        <Image
-          src={book.image}
-          alt={book.name}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg"
-        />
+        <Image src={book.image} alt={book.name} fill className="rounded-t-lg" />
         {!book.available && (
           <div className="absolute top-0 right-0 px-2 py-1 text-xs text-white bg-red-500 rounded-bl-lg">
             Out of stock

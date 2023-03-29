@@ -1,6 +1,6 @@
 // Import React and the card component
 import React from "react";
-import FinalBooksCard from "../../component/InteractiveBooksCard";
+import FinalBooksCard from "../../component/(TestBooks)/InteractiveBooksCard";
 
 // Define an array of books
 const books = [

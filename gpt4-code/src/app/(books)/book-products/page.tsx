@@ -1,6 +1,6 @@
 // Import React and the BookCard component
 import React from "react";
-import BookResponsiveCard from "../../component/BooksResponsiveCard";
+import BookResponsiveCard from "../../component/(TestBooks)/BooksResponsiveCard";
 
 // Define the interface for the book data
 interface Book {
