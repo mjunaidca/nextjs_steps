@@ -54,7 +54,7 @@ const Navbar = () => {
         {/* The pages and button group */}
         <div className="flex items-center space-x-4">
           {/* The pages */}
-          <ul className="hidden md:flex items-center space-x-8 max-w-2xl">
+          <ul className="hidden md:flex items-center space-x-16 md:space-x-8 max-w-2xl">
             {" "}
             {
               // Added space-x-8 and max-w-2xl here
