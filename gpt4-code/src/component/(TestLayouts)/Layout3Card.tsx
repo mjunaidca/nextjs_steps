@@ -1,24 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { FaBook, FaDollarSign, FaShoppingCart } from "react-icons/fa"; // using react-icons for icons
+import { BOOKPROPS } from "@/utlis/types";
 
-interface Book {
-  id: number;
-  name: string;
-  author: string;
-  isbn: string;
-  type: string;
-  price: number;
-  currentStock: number;
-  available: boolean;
-  image: string;
-}
-
-interface Props {
-  book: Book; // the book data to display on the card
-}
-
-const InteractiveBooksCard: React.FC<Props> = ({ book }) => {
+const Layout3Card: React.FC<BOOKPROPS> = ({ book }) => {
   // a function to format the price with two decimal places and a dollar sign
   const formatPrice = (price: number) => {
     return `$${price.toFixed(2)}`;
@@ -83,4 +68,4 @@ const InteractiveBooksCard: React.FC<Props> = ({ book }) => {
   );
 };
 
-export default InteractiveBooksCard;
+export default Layout3Card;

@@ -1,21 +1,9 @@
 // BooksResponsiveCard.tsx
 import React from "react";
-
-// Define the props type for the component
-type BookCardProps = {
-  id: number;
-  name: string;
-  author: string;
-  isbn: string;
-  type: string;
-  price: number;
-  currentStock: number;
-  available: boolean;
-  image: string;
-};
+import { BOOKINTERFACE } from "@/utlis/types";
 
 // Define the component function
-const AllBooks: React.FC<BookCardProps> = ({
+const Layout1Card: React.FC<BOOKINTERFACE> = ({
   id,
   name,
   author,
@@ -76,4 +64,4 @@ const AllBooks: React.FC<BookCardProps> = ({
   );
 };
 
-export default AllBooks;
+export default Layout1Card;

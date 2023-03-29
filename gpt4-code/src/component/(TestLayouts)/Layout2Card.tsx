@@ -14,7 +14,7 @@ type BookCardProps = {
 };
 
 // Create a reusable book card component
-export default function BookCard({
+export default function Layout2Card({
   bookname,
   author,
   stock,

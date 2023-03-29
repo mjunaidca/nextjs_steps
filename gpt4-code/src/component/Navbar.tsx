@@ -5,21 +5,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import ImageCover from "../1.png";
-
-// The interface for the page links
-interface PageLink {
-  name: string;
-  link: string;
-}
-
-// The array of page links
-const pageLinks: PageLink[] = [
-  { name: "Home", link: "/" },
-  { name: "Product", link: "/product" },
-  { name: "About", link: "/about" },
-  { name: "Pricing", link: "/pricing" },
-];
+import OwlLogo from "../app/BookOwl.png";
+import { pageLinks } from "@/utlis/data";
 
 // The Navbar component
 const Navbar = () => {
@@ -50,7 +37,7 @@ const Navbar = () => {
           {/* The logo */}
           <Link href="/" passHref>
             <div className="cursor-pointer">
-              <Image src={ImageCover} alt="Book Store" width={40} height={40} />
+              <Image src={OwlLogo} alt="Book Store" width={80} height={80} />
             </div>
           </Link>
           {/* The search bar */}

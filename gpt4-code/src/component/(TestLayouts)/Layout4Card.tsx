@@ -1,22 +1,10 @@
 // Import React and NextJS Image component
 import React from "react";
 import Image from "next/image";
-
-// Define the interface for the props
-interface BookCardProps {
-  id: number;
-  name: string;
-  author: string;
-  isbn: string;
-  type: string;
-  price: number;
-  currentStock: number;
-  available: boolean;
-  img: string;
-}
+import { BOOKINTERFACE } from "@/utlis/types";
 
 // Define the BookCard component
-const BookResponsiveCard: React.FC<BookCardProps> = ({
+const Layout4Card: React.FC<BOOKINTERFACE> = ({
   id,
   name,
   author,
@@ -25,7 +13,7 @@ const BookResponsiveCard: React.FC<BookCardProps> = ({
   price,
   currentStock,
   available,
-  img,
+  image,
 }) => {
   // Return the JSX element for the card
   return (
@@ -40,7 +28,7 @@ const BookResponsiveCard: React.FC<BookCardProps> = ({
       {/* Show the book cover image */}
       <div className="h-48 w-full relative">
         <Image
-          src={img}
+          src={image}
           alt={name}
           layout="fill"
           objectFit="cover"
@@ -65,4 +53,4 @@ const BookResponsiveCard: React.FC<BookCardProps> = ({
 };
 
 // Export the BookCard component
-export default BookResponsiveCard;
+export default Layout4Card;

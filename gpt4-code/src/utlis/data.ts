@@ -1,34 +1,7 @@
-import React from "react";
-import BFinalCard from "../component/BFinalCard";
+import { PAGELINK, BOOKINTERFACE } from './types'
 
-const BooksPage = () => {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
-      <h1 className="text-4xl font-bold text-gray-800">Books Store</h1>
-      <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {books.map((book) => (
-          <BFinalCard key={book.id} book={book} />
-        ))}
-      </div>
-    </div>
-  );
-};
+export const books: BOOKINTERFACE[] = [
 
-export default BooksPage;
-
-const books = [
-  {
-    id: 1,
-    name: "The Russian",
-    author: "James Patterson and James O. Born",
-    isbn: "1780899475",
-    type: "fiction",
-    price: 12.98,
-    currentStock: 12,
-    available: true,
-    image:
-      "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
   {
     id: 2,
     name: "The Midnight Library",
@@ -89,6 +62,7 @@ const books = [
     image:
       "https://images.unsplash.com/photo-1581079289103-0544b7dfad66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
   },
+
   {
     id: 7,
     name: "The Boy, The Mole, The Fox and The Horse",
@@ -124,6 +98,18 @@ const books = [
     available: true,
     image:
       "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: 1,
+    name: "The Russian",
+    author: "James Patterson and James O. Born",
+    isbn: "1780899475",
+    type: "fiction",
+    price: 12.98,
+    currentStock: 12,
+    available: true,
+    image:
+      "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
     id: 4,
@@ -174,3 +160,15 @@ const books = [
       "https://images.unsplash.com/photo-1515098506762-79e1384e9d8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
   },
 ];
+
+
+
+// The array of page links
+export const pageLinks: PAGELINK[] = [
+  { name: "All Books", link: "books-gateway" },
+  { name: "Layout 1", link: "/layout1" },
+  { name: "Layout 2", link: "/layout2" },
+  { name: "Layout 3", link: "/layout3" },
+  { name: "Layout 4", link: "/layout4" },
+];
+
