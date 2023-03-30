@@ -57,7 +57,7 @@ const BFinalCard = ({ book }: Props) => {
           }`}
           disabled={!book.available}
         >
-          Buy now
+          View Details
           <FaShoppingCart className="ml-2" />
         </button>
       </div>
