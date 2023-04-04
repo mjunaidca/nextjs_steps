@@ -4,6 +4,7 @@ import Image from "next/image";
 async function GetContent() {
   const res = await fetch(
     `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.CONTENTFUL_DELIVERY_KEY}&content_type=bloga`
+    // `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.CONTENTFUL_DELIVERY_KEY}&content_type=mjsProjects`
   );
 
   if (!res.ok) {
