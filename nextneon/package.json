@@ -14,10 +14,16 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "kysely": "^0.24.2",
+    "kysely-neon": "^1.0.2",
     "next": "13.2.4",
     "postgres": "^3.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.3"
+    "typescript": "5.0.3",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4"
   }
 }

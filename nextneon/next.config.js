@@ -3,11 +3,15 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  // env: {
+  //   PGHOST: "ep-white-field-112151.us-east-2.aws.neon.tech",
+  //   PGDATABASE: "neondb",
+  //   PGUSER: "mr.junaid.ca",
+  //   PGPASSWORD: "8SZK7nuERWso",
+  // },
   env: {
-    PGHOST: "ep-wandering-dawn-609946.ap-southeast-1.aws.neon.tech",
-    PGDATABASE: "neondb",
-    PGUSER: "mr.junaid.ca",
-    PGPASSWORD: "RMTgzb70IJUp",
+    NEON_DATABASE_URL:
+      "postgres://mr.junaid.ca:8SZK7nuERWso@ep-white-field-112151.us-east-2.aws.neon.tech/neondb",
   },
 };
 
