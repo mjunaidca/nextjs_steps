@@ -1,5 +1,3 @@
-import React from 'react'
-
 async function getData() {
     const res = await fetch('https://api.quotable.io/random?tags=technology');
     if (!res.ok) {
