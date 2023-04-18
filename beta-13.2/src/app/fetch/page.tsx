@@ -15,4 +15,4 @@ export default async function Home() {
             <div>{quote.content}</div>
         </main>
     )
-};
+}

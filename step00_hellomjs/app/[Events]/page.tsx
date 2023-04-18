@@ -12,6 +12,8 @@
 export default function GiveName({ params }: {
   params: { Events: string },
 }) {
+
+  
   console.log(params.Events);
   
   

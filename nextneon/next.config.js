@@ -11,7 +11,7 @@ const nextConfig = {
   // },
   env: {
     NEON_DATABASE_URL:
-      "postgres://mr.junaid.ca:8SZK7nuERWso@ep-white-field-112151.us-east-2.aws.neon.tech/neondb",
+      "postgres://mr.junaid.ca:Of8jtYhgeH4C@ep-red-thunder-428017.us-east-2.aws.neon.tech/neondb",
   },
 };
 

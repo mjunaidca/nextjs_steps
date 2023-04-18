@@ -14,3 +14,6 @@ export default function page() {
         <div>{data.content}</div>
     )
 }
+
+
+
