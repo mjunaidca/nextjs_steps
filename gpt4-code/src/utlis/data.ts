@@ -166,9 +166,9 @@ export const books: BOOKINTERFACE[] = [
 // The array of page links
 export const pageLinks: PAGELINK[] = [
   { name: "All Books", link: "books-gateway" },
-  { name: "Layout 1", link: "/layout1" },
-  { name: "Layout 2", link: "/layout2" },
-  { name: "Layout 3", link: "/layout3" },
-  { name: "Layout 4", link: "/layout4" },
+  // { name: "Layout 1", link: "/layout1" },
+  // { name: "Layout 2", link: "/layout2" },
+  // { name: "Layout 3", link: "/layout3" },
+  // { name: "Layout 4", link: "/layout4" },
 ];
 
